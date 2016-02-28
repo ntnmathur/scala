@@ -7,6 +7,11 @@ public_workspace/
 # Maven
 log/
 target/
+.cache
+.cache-main
+.gradle/
 
 # Mac
 .DS_Store
+/build/
+/bin/
