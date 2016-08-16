@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.fanatics.data.infrastructure.attunity.processor.EmailD
+ ataProcessor
+
