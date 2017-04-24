@@ -101,20 +101,20 @@ Array(1,2,3,4).toString //res24: String = [I@6b8b4ad8
 Array(1,2,3,4).mkString("|") //res25: String = 1|2|3|4
 
 val scores = Map("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8) //isVowelX: isVowelX[](val ch: Char,val vowelChars: String) => Boolean
-val mscores = scala.collection.mutable.Map("Alice" -> 10) // mscores: scala.collection.mutable.Map[String,Int] = Map(Alice -> 10)
+//val mscores = scala.collection.mutable.Map("Alice" -> 10) // mscores: scala.collection.mutable.Map[String,Int] = Map(Alice -> 10)
 
 val bobScore = scores("Bob") //bobScore: Int = 3
 
 //scores("Nitin") //  This can be an exception
 scores.getOrElse("Nitin",0) // If not found - you can add a default value
-
-mscores("Bob") = 7 // Add a new element
-mscores //res28: scala.collection.mutable.Map[String,Int] = Map(Bob -> 7, Alice -> 10)
-
-mscores += ("Nitin" -> 25, "Aarav" -> 29)
-mscores // res29: scala.collection.mutable.Map[String,Int] = Map(Bob -> 7, Aarav -> 29, Nitin -> 25, Alice -> 10)
-mscores -= "Alice"
-mscores //res31: scala.collection.mutable.Map[String,Int] = Map(Bob -> 7, Aarav -> 29, Nitin -> 25)
+//
+//mscores("Bob") = 7 // Add a new element
+//mscores //res28: scala.collection.mutable.Map[String,Int] = Map(Bob -> 7, Alice -> 10)
+//
+//mscores += ("Nitin" -> 25, "Aarav" -> 29)
+//mscores // res29: scala.collection.mutable.Map[String,Int] = Map(Bob -> 7, Aarav -> 29, Nitin -> 25, Alice -> 10)
+//mscores -= "Alice"
+//mscores //res31: scala.collection.mutable.Map[String,Int] = Map(Bob -> 7, Aarav -> 29, Nitin -> 25)
 
 scores // res33: scala.collection.immutable.Map[String,Int] = Map(Alice -> 10, Bob -> 3, Cindy -> 8)
 scores + ("Bob" -> 10, "Fred" -> 7) // res34: scala.collection.immutable.Map[String,Int] = Map(Alice -> 10, Bob -> 10, Cindy -> 8, Fred -> 7)
@@ -145,5 +145,3 @@ t _2 // res42: Double = 3.14
 val (_, second, third) = t
 second // second: Double = 3.14
 third // third: String = Fred
-
-
